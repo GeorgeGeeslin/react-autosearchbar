@@ -4,12 +4,10 @@ Customizable searchbar for React. Supports from-middle-of-word searches and prov
 
 When only one character is entered only items beginning with that character are returned. When multiple character are entered then all results containing that character combination are returned.
 
-```javascript
-import { Searchbar } from "react-autosearchbar";
-```
-
 ```jsx
-<Searchbar data={data} returnSuggestions={returnSuggestions} />
+import { Searchbar } from "react-autosearchbar";
+
+<Searchbar data={data} returnSuggestions={returnSuggestions} />;
 ```
 
 Checkout out this [example](https://codesandbox.io/embed/react-autosearchbar-46z17) to see how to use the component.
