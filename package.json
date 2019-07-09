@@ -1,0 +1,45 @@
+{
+  "name": "react-autosearchbar",
+  "version": "1.1.0",
+  "description": "Customizable searchbar for React that supports from-middle-of-word searches and provides autocomplete options with matching characters in bold text.",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublishOnly": "babel ./src --out-dir ./dist -s inline"
+  },
+  "keywords": [
+    "ReactJs",
+    "autocomplete",
+    "auto-complete",
+    "autosuggest",
+    "auto-suggest",
+    "searchbar"
+  ],
+  "homepage": "https://github.com/GeorgeGeeslin/react-autocomplete#readme",
+  "bugs": "https://github.com/GeorgeGeeslin/react-autocomplete/issues",
+  "author": "George Geeslin <george.geeslin@gmail.com> (https://georgegeeslin.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GeorgeGeeslin/react-autosearchbar.git"
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "styled-components": "^4.3.2",
+    "typeface-roboto": "^0.0.54"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/preset-react": "^7.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2",
+    "typeface-roboto": "0.0.54"
+  },
+  "files": [
+    "dist/*"
+  ]
+}
