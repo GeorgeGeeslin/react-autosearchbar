@@ -52,26 +52,19 @@ export default class Searchbar extends React.Component {
     //Enter Key is pressed
     if (e.keyCode === 13) {
       e.preventDefault();
-      //Only accept Enter if there is input.
-      if (this.state.input.length > 0) {
-        //Take the highlighted option if it exists.
-        if (highlightItem > -1) {
-          this.props.returnSuggestions([this.state.suggestions[highlightItem]]);
-          this.setState({
-            input: this.state.suggestions[highlightItem],
-            suggestions: this.state.suggestions,
-            suggestionMarkup: this.state.suggestionMarkup,
-            highlightItem: -1,
-            focused: false
-          });
-        } else {
-          this.props.returnSuggestions(this.state.suggestions);
-        }
-        this.setState({ suggestions: [], suggestionMarkup: [] });
+      if (highlightItem > -1) {
+        this.props.returnSuggestions([this.state.suggestions[highlightItem]]);
+        this.setState({
+          input: this.state.suggestions[highlightItem],
+          suggestions: this.state.suggestions,
+          suggestionMarkup: this.state.suggestionMarkup,
+          highlightItem: -1,
+          focused: false
+        });
       } else {
-        //Send "empty search string" when user presses enter with no input.
-        this.props.returnSuggestions("empty search string");
+        this.props.returnSuggestions(this.state.suggestions);
       }
+      this.setState({ suggestions: [], suggestionMarkup: [] });
       //Down Arrow is pressed
     } else if (e.keyCode === 40 && highlightItem < suggestionCount - 1) {
       const index = highlightItem + 1;

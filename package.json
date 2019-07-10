@@ -1,6 +1,6 @@
 {
   "name": "react-autosearchbar",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Customizable searchbar for React that supports from-middle-of-word searches and provides autocomplete options with matching characters in bold text.",
   "main": "dist/index.js",
   "scripts": {
